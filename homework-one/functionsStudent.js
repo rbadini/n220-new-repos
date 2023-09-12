@@ -18,7 +18,7 @@ var greet = function(){
 greet();
 var favBand = "Teddy Swims";
 
-function facoriteBand(favBand){
+function favoriteBand(favBand){
     document.getElementById
     ('favBand').innerHTML = favBand;
 }
@@ -82,5 +82,28 @@ function test() {
 console.log(test());
 
 
+function totalRec(h,w) {
+    let perm = recPerm(h,w);
+    let area = h*w;
+    let recInfo = [perm, area];
+    return recInfo;
 
+}
+
+document.getElementsById('multiAnswer').
+innerHTML ="perimeter: " + totalRec(recHeight, recWidth)[0] + " feet<br/>Area: " + totalRec(recHeight, recWidth)[1] + "square feet. ";
+function myFunction() {
+    alert("Who goes there?");
+} 
+
+function wizard(name, job) {
+    document.getElementsById('future').innerHTML = "Welcome " + name + ", the " + job +"!";
+}
+
+function addItem() {
+    let item = prompt("AddItem:");
+    console.log(item);
+    alert("you added " + item + " to your lists");
+
+}
 
