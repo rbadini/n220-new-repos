@@ -4,7 +4,7 @@
 
 ### Assignment One
 
-Weblink:https://in-info-web4.informatics.iupui.edu/~wbadini/N220/homework-one/simpleCalculations.html  
+Weblink:https://in-info-web4.informatics.iupui.edu/~wbadini/N220/homework-three/simpleCalculations.html  
 
 
 
