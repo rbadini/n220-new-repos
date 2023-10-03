@@ -2,12 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <p>Test page</p>
-    <p id="fullName"></p>
+    <input id="str" type="text/>"
+    <button onclick="getStr()">Click Me</button>
+    <p id="strText"></p>
+    <script>
+        function getStr() {
+            let inputStr = document.getElementById('str').value;
+            let rNum = Math.floor(Math.random()*inputStr.length)+1;
+            let strHalf = inputStr/2;
+            let sCharacter = inputStr.charAt(rNum);
+
+            if(rNum>strHalf) {
+                document.getElementById('strText').innerHTML = "this letter is in the second half of your string: " + sCharacter;
+
+                
+            }else if(rNum===strHalf) {
+                document.getElementById('strText').innerHTML = "this letter is in the middle of your string: " + sCharacter;
+
+            }else {
+                document.getElementById('strText').innerHTML = "this letter is in the first half of your string: " + sCharacter;
+            }
+        }
+
+
+    </script>
+    <!-- <p>Test page</p>
+    <p id="fullName"></p> -->
 
     <h1>lunch problem</h1>
     <p id=""lunch>Do you have enough money for lunch? yes or no</p>
