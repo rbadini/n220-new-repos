@@ -21,7 +21,7 @@ function addItem() {
     var trashIcon = document.createElement('img');
     // Set the source attribute to the URL of the trashcan icon
     trashIcon.setAttribute('src', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/27019/trashcanIcon.png');
-    trashIcon.className = 'listIcon'; // Set the class name for styling (if needed)
+    trashIcon.classList.add('listIcon'); // Set the class name for styling (if needed)
 
     newListItem.appendChild(trashIcon); // Append the trash icon to the new list item
 
