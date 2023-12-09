@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Circles</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: blue;
+            margin: 5px;
+        }
+        .circle.clicked {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Interactive Circle Generator</h2>
+    <input type="number" id="circleCount" min="1" max="100" placeholder="Enter a number (1-100)">
+    <button onclick="generateCircles()">Generate</button>
+    <div id="circleContainer"></div> 
+
+    <script src="InteractiveCircles.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+     
+</head>
+<body>
+    <h2>Number Guessing Game</h2>
+    <p>Guess a number between 1 and 100. You have 5 chances.</p>
+    <input type="number" id="userGuess" min="1" max="100">
+    <button onclick="makeAGuess()">Guess</button>
+
+    <p id="feedback"></p>
+    <p>Chances left: <span id="chancesLeft">5</span></p>
+    <p>Wins: <span id="wins">0</span> | Losses: <span id="losses">0</span></p>
+
+    <script src="numberGuessingGame.js"></script>
+</body>
+</html>
